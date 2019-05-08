@@ -1,5 +1,5 @@
-# Learn blockchain based on its white paper 
-[![Status:](https://img.shields.io/badge/Status--tutorial-Done-green.svg)](#Done)
+# Codebase for my theses
+[![Status:](https://img.shields.io/badge/Status-Ongoing--dev-blue.svg)](#Developmetn)
 
 Repo kodingan untuk tesis saya. Basd on javascript [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) dan library terkait
 
