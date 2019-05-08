@@ -1,0 +1,34 @@
+{
+  "name": "blockchainjs-whitepaper",
+  "version": "1.0.0",
+  "description": "Repo ini saya gunakan buat memahami blockchain pake [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) ES6 dan beberapa library terkait",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "dev-test": "nodemon dev-test",
+    "start": "node ./app",
+    "dev": "nodemon ./app"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/igmerwina/blockchainjs-whitepaper-.git"
+  },
+  "keywords": [],
+  "author": "@igmerwina",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto-js": "^3.1.9-1",
+    "elliptic": "^6.4.1",
+    "express": "^4.16.4",
+    "uuid": "^3.3.2",
+    "ws": "^6.2.1"
+  }
+}
