@@ -1,9 +1,9 @@
-# Codebase for my theses
-[![Status:](https://img.shields.io/badge/Status-Ongoing--dev-blue.svg)](#Developmetn)
+# Code for my theses
+[![Status:](https://img.shields.io/badge/Status-Ongoing--dev-blue.svg)](#Development)
 
-Repo kodingan untuk tesis saya. Basd on javascript [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) dan library terkait
+Repo kodingan untuk tesis saya, pakai bahasa pemrograman javascript [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) dan library-library terkait
 
-Code base yang dipakai adalah [Sf-chain](https://github.com/15Dkatz/sf-chain) by David Katz
+_Codebase_ yang dipakai berasal dari [sf-chain](https://github.com/15Dkatz/sf-chain) oleh [David Katz](https://davidtkatz.com/#/). Pengembangan disesuaikan dengan kebutuhan tesis.
 
 ## Semangat!!! :fire: :fire:
 
