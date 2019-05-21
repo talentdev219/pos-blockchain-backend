@@ -13,9 +13,12 @@
     "testEnvironment": "node",
     "reporters": [
       "default",
-      ["./node_modules/jest-html-reporter", {
-        "pageTitle": "Test: Platform e-money Blockchain based"
-      }]
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test: Platform e-money Blockchain based"
+        }
+      ]
     ]
   },
   "repository": {
@@ -32,6 +35,7 @@
   },
   "dependencies": {
     "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
     "crypto-js": "^3.1.9-1",
     "elliptic": "^6.4.1",
     "express": "^4.16.4",

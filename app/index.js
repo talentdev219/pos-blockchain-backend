@@ -1,5 +1,6 @@
 const express = require('express')
 const bp = require('body-parser')
+const cors = require('cors')
 
 const Blockchain = require('../blockchain')
 const P2pServer = require('./p2p-server') 
@@ -16,6 +17,7 @@ const tp = new TransactionPool()
 const p2p = new P2pServer(bc, tp)
 const miner = new Miner(bc, tp, wallet, p2p)
 
+app.use(cors()); // allow cors
 app.use(bp.json()) // allow us to receive json on post request
 
 app.get('/blocks', (req,res) => {
