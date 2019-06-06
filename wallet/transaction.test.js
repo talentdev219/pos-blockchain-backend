@@ -10,7 +10,7 @@ describe('Transaction', () =>{
     // create relevant value before test func.
     beforeEach(() => {
         wallet = new Wallet()
-        amount = 50
+        amount = 50000
         recipient = 'r3c1p1i3nt'    
 
         transaction = Transaction.newTransaction(wallet, recipient,amount)
@@ -44,7 +44,7 @@ describe('Transaction', () =>{
     it('invalidates a corrupt transaction', () => {
         // corruptig the transaction 
         // by taking the 1st output & changinng to something unseen 
-        transaction.outputs[0].amount = 50000
+        transaction.outputs[0].amount = 500000
         expect(Transaction.verifyTransaction(transaction)).toBe(false) 
     })
 
@@ -52,7 +52,7 @@ describe('Transaction', () =>{
     // ---- beda kondisi: kondisi kalau amount tx > wallet balance ----
     describe('transacting with an amount that exceed the balance', () => {
         beforeEach(() => {
-            amount = 50000
+            amount = 500000
             transaction = Transaction.newTransaction(wallet, recipient, amount)
         })
 
@@ -69,7 +69,7 @@ describe('Transaction', () =>{
         let nextAmount, nextRecipient
 
         beforeEach(() => {
-            nextAmount = 20
+            nextAmount = 20000
             nextRecipient = 'n3xt-4ddr355' 
             transaction = transaction.update(wallet, nextRecipient, nextAmount)  
         })

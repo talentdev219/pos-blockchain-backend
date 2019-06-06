@@ -40,8 +40,8 @@ describe('Blockchain', () => {
 
     // invalidates a corrupt chain
     it('invalidates a corrupt chain', () => {
-        bc2.addBlock('foo') // jadi data kedua di chain
-        bc2.chain[1].data = 'Not Foo' // data kedua langsung diganti
+        bc2.addBlock('aisuhdiuasdh89314u81934') // jadi data kedua di chain
+        bc2.chain[1].data = 'sjidfsioud2894i58j' // data kedua langsung diganti
 
         expect(bc.isValidChain(bc2.chain)).toBe(false) // hasilnya false
      })

@@ -9,7 +9,7 @@ _Codebase_ yang dipakai berasal dari [sf-chain](https://github.com/15Dkatz/sf-ch
 
 ---
 
-Note - Add peer:
+Note - Add peer and running:
 
 ```HTTP_PORT=3002 P2P_PORT=5002 PEERS=ws://localhost:5001 npm run dev```
 

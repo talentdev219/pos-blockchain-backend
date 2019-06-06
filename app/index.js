@@ -17,7 +17,7 @@ const tp = new TransactionPool()
 const p2p = new P2pServer(bc, tp)
 const miner = new Miner(bc, tp, wallet, p2p)
 
-app.use(cors()); // allow cors
+app.use(cors()); // allow cors fpr http req
 app.use(bp.json()) // allow us to receive json on post request
 
 app.get('/blocks', (req,res) => {
