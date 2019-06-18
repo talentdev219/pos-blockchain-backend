@@ -47,13 +47,6 @@ class Transaction{
         ])
     }
 
-    // // blockchain wallet digunakan untuk confirm & authenticate reward transaction
-    // static rewardTransaction(minerWallet, blockchainWallet){
-    //     return Transaction.transactionWithOutputs(blockchainWallet, [
-    //         { amount: MINING_REWARD, address: minerWallet.publicKey }
-    //     ])
-    // }
-
     // buat input dalam transaksi, tapi jadi signature
     static signTransaction(transaction, senderWallet){
         transaction.input = {
