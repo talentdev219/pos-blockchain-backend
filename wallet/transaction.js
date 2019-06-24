@@ -2,7 +2,6 @@
 // kaya transfer uang, dsb 
 
 const ChainUtil = require('../chain-util')
-const { MINING_REWARD } = require('../config')
 class Transaction{
     constructor(){
         this.id = ChainUtil.id()
@@ -51,6 +50,7 @@ class Transaction{
     static signTransaction(transaction, senderWallet){
         transaction.input = {
             timestamp: Date.now(),
+            id_kartu: ChainUtil.hash(senderWallet.id_kartu),
             amount: senderWallet.balance,
             address: senderWallet.publicKey,
             signature: senderWallet.sign(ChainUtil.hash(transaction.outputs))

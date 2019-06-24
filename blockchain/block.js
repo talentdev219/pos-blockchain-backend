@@ -55,7 +55,6 @@ class Block {
     // hash with SHA256
     static hash(timestamp, lastHash, data, nonce, difficulty){
         return ChainUtil.hash(`${timestamp}${lastHash}${data}${nonce}${difficulty}`).toString()
-
     }
 
     // static blockHash 

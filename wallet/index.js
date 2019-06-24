@@ -1,7 +1,7 @@
 const ChainUtil = require('../chain-util')
 const { INITIAL_BALANCE } = require('../config')
 const Transaction = require('./transaction')
-
+ 
 class Wallet{
     constructor(){
         this.balance = INITIAL_BALANCE
@@ -19,10 +19,9 @@ class Wallet{
     // buat signature dari transaksi 
     sign(dataHash){
         return this.keyPair.sign(dataHash)
-        
     }
 
-    createTransaction(recipient, amount, blockchain, transactionPool){
+    createTransaction(recipient, amount, id_kartu, blockchain, transactionPool){
         // calculate the balance 
         this.balance = this.calculateBalance(blockchain)
 
@@ -47,7 +46,6 @@ class Wallet{
     }
 
     // function to calculate the final balance 
-    // kurang paham sama ni fungsi :hmmm
     calculateBalance(blockchain){
         let balance = this.balance
         let transactions = []

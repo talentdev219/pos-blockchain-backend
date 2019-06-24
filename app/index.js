@@ -40,8 +40,8 @@ app.get('/transactions', (req, res) => {
 
 // add transaction to transaction pool 
 app.post('/transac', (req, res) => {
-  const { recipient, amount } = req.body
-  const transaction = wallet.createTransaction(recipient, amount, bc, tp)
+  const { recipient, amount, id_kartu } = req.body
+  const transaction = wallet.createTransaction(recipient, amount, id_kartu, bc, tp)
   p2p.broadcastTransaction(transaction)
   res.redirect('/transactions') 
 })
@@ -52,8 +52,6 @@ app.get('/mine-transactions', (req, res) => {
   const block = miner.mine()
   console.log(`New block added: ${block.toString()}`)
   res.redirect('/blocks')
-
-
 })
 
 // enpoint to see public key of user
