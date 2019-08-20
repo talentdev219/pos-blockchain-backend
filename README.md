@@ -3,7 +3,7 @@
 
 Repo kodingan untuk tesis saya, pakai bahasa pemrograman javascript [javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) dan library-library terkait
 
-_Codebase_ yang dipakai berasal dari [sf-chain](https://github.com/15Dkatz/sf-chain) oleh [David Katz](https://davidtkatz.com/#/). Pengembangan disesuaikan dengan kebutuhan tesis.
+_Codebase_ yang dipakai berasal dari [sf-chain](https://github.com/15Dkatz/sf-chain) oleh [David Katz](https://davidtkatz.com/#/). Pengembangan jalan terus gan..
 
 ## Semangat!!! :fire: :fire:
 
