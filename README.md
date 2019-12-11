@@ -11,7 +11,6 @@ _Codebase_ yang dipakai berasal dari [sf-chain](https://github.com/15Dkatz/sf-ch
 
 Jalankan ```npm install``` terlebih dahulu
 
----
 
 Gunakan ```git bash``` atau ```cmder``` atau ``` linux terminal``` buat ngejalanin perintah di bawah ini. Masing-masing pada terminal terpisah 
 
@@ -30,5 +29,6 @@ Gunakan ```git bash``` atau ```cmder``` atau ``` linux terminal``` buat ngejalan
 
 ```HTTP_PORT=3004 P2P_PORT=5004 PEERS=ws://localhost:5001,ws://localhost:5002,ws://localhost:5003 npm run dev```
 
-Dst
+##### Dan seterusnya 
+
 ```HTTP_PORT=3005 P2P_PORT=5005 PEERS=ws://localhost:5001,ws://localhost:5002,ws://localhost:5003,ws://localhost:5004 npm run dev```
